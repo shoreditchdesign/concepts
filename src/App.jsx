@@ -165,15 +165,15 @@ const type = {
   brand: "text-[1.2rem] font-medium tracking-[-0.05em]",
   nav: "text-[0.78rem] uppercase tracking-[0.16em]",
   label: "text-[0.72rem] font-medium uppercase tracking-[0.26em]",
-  heroTitle: "w-full font-serif text-[4rem] leading-[0.92] tracking-[-0.02em] text-[#111533] md:text-[5.8rem]",
+  heroTitle: "w-full max-w-[600px] font-serif text-[4rem] leading-[0.92] tracking-[-0.02em] text-[#111533]",
   sectionTitle:
-    "w-full font-serif text-[2.9rem] leading-[1.04] tracking-[-0.02em] md:text-[3.35rem]",
+    "w-full font-serif text-[3rem] leading-[1.04] tracking-[-0.02em]",
   cardTitle: "font-serif text-[1.95rem] leading-tight tracking-[-0.02em]",
-  bodyLg: "text-[1.12rem] leading-9 md:text-[1.16rem]",
-  body: "text-[1.06rem] leading-9 md:text-[1.1rem]",
-  bodySm: "text-[1rem] leading-8 md:text-[1.02rem]",
+  bodyLg: "text-[1.125rem] leading-9",
+  body: "text-[1rem] leading-8",
+  bodySm: "text-[1rem] leading-8",
   footerTitle:
-    "w-full max-w-[800px] font-serif text-[3rem] leading-[1.02] tracking-[-0.02em] md:text-[3.35rem]",
+    "w-full max-w-[800px] font-serif text-[3rem] leading-[1.02] tracking-[-0.02em]",
 };
 
 function Label({ children, dark = false }) {
@@ -220,7 +220,7 @@ function UiPreview({ onPlay }) {
         aria-label="Play product walkthrough video"
         className="absolute inset-0 grid place-items-center"
       >
-        <div className="grid h-20 w-20 place-items-center rounded-[8px] bg-[linear-gradient(135deg,#156C74,#4A63FA)] text-3xl text-white shadow-[0_20px_40px_rgba(66,96,215,0.28)] transition-transform duration-200 hover:scale-[1.03]">
+        <div className="grid h-20 w-20 place-items-center rounded-[8px] bg-[linear-gradient(135deg,#3557F6,#4A69FB)] text-3xl text-white shadow-[0_20px_40px_rgba(66,96,215,0.28)] transition-transform duration-200 hover:scale-[1.03]">
           ▶
         </div>
       </button>
@@ -376,7 +376,7 @@ function App() {
                   <div className={`${type.label} text-slate-400`}>
                     {step.label}
                   </div>
-                  <div className="grid h-9 w-9 place-items-center rounded-[4px] bg-[#EAF7F7] text-xl font-semibold text-[#156C74]">
+                  <div className="grid h-9 w-9 place-items-center rounded-[4px] bg-[#EEF2FF] text-xl font-semibold text-[#3557F6]">
                     {step.badge}
                   </div>
                 </div>
